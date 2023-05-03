@@ -9,7 +9,9 @@ import axios from "axios";
 import './utils/request'
 
 
-axios.defaults.baseURL = 'http://10.0.12.2:64202'
+// axios.defaults.baseURL = 'http://10.0.12.2:64202'
+// 测试
+axios.defaults.baseURL = 'http://mapping.fairy.host:65511'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
