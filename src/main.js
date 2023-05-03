@@ -9,8 +9,7 @@ import axios from "axios";
 import './utils/request'
 
 
-// axios.defaults.baseURL = 'http://kh7yz8.natappfree.cc'
-axios.defaults.baseURL = 'http://127.0.0.1:64201'
+axios.defaults.baseURL = 'http://10.0.12.2:64202'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

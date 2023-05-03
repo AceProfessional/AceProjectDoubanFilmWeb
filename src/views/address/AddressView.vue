@@ -71,7 +71,7 @@ onMounted(()=>{
 <style lang="less" scoped>
 .box-card {
   width: 95%;
-  height: 700px;
+  height: 800px;
   display: inline-block;
   margin-right: 15px;
   margin-left: 15px;

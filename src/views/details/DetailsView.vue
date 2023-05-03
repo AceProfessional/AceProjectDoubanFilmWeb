@@ -20,7 +20,7 @@
           :key="item.prop"
           :label="item.label"
           :prop="item.prop"
-          :width="item.prop == 'id' ? 50 : 120"
+          :width="item.prop === 'id' ? 50 : 120"
       />
     </el-table>
     <el-pagination
@@ -116,6 +116,7 @@ export default {
       },
     ])
 
+    // const ss = ref()
     const config = reactive({
       tableData:null,
       total:null,
@@ -139,9 +140,13 @@ export default {
       keyword:'',
     })
     const handleSearch = ()=>{
-      config.tableData.title = formInline.keyword
-      getDetailsData(config.tableData)
+      getDetailsData({
+        'kw': formInline.keyword,
+        'page': config.page,
+        'num': config.limit
+      })
     }
+
     // 分页设置
     const currentPage2 = ref(1)
     const pageSize2 = ref(5)
@@ -152,7 +157,12 @@ export default {
     }
     const handleCurrentChange = (val) => {
       config.page = val
-      getDetailsData({page: val, num: config.limit})
+      if (formInline.keyword === '') {
+        getDetailsData({page: val, num: config.limit})
+      } else {
+        console.log(formInline.keyword)
+        getDetailsData({page: val, num: config.limit, 'kw': formInline.keyword})
+      }
     }
 
     // 图片

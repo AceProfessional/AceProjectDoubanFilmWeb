@@ -116,7 +116,7 @@ onMounted(() => {
 
 .box-card {
   width: 95%;
-  height: 700px;
+  height: 800px;
   display: inline-block;
   margin-left: 15px;
   margin-right: 15px;

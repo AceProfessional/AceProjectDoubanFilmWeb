@@ -6,6 +6,7 @@ import DetailsView from "@/views/details/DetailsView";
 import TimeView from "@/views/time/TimeView";
 import ScoreView from "@/views/score/ScoreView";
 import AddressView from "@/views/address/AddressView";
+import DirectorView from "@/views/director_sort/DirectorView";
 
 const routes = [
     {
@@ -22,6 +23,11 @@ const routes = [
                 path: 'details',
                 name: 'details',
                 component: DetailsView
+            },
+            {
+                path: 'director',
+                name: 'director',
+                component: DirectorView
             },
             {
                 path: 'time',

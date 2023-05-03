@@ -5,8 +5,7 @@ import axios from "axios";
 // 创建axios实例
 const Service = axios.create({
     // 请求地址的公共部分
-    // baseURL:'http://kh7yz8.natappfree.cc',
-    baseURL:'http://127.0.0.1:64201',
+    baseURL:'http://10.0.12.2:64202',
     // 请求的超时时间
     timeout:3000
 })

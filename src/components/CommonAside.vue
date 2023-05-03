@@ -39,6 +39,12 @@ export default {
         icon: 'DocumentRemove',
       },
       {
+        path: '/director',
+        name: 'director',
+        label: '导演分析',
+        icon: 'House'
+      },
+      {
         path: '/time',
         name: 'time',
         label: '时间分析',

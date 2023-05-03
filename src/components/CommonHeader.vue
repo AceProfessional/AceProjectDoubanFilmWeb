@@ -1,7 +1,7 @@
 <template>
   <el-header>
     <div>
-      <img src="@/assets/images/logo64.svg" alt="logo">
+      <a href="https://movie.douban.com/" target="_blank"><img src="@/assets/images/logo64.svg" alt="logo"></a>
       <span>豆瓣电影数据分析</span>
     </div>
   </el-header>
