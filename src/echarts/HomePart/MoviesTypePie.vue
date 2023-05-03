@@ -75,13 +75,14 @@ export default {
 <style lang="less" scoped>
 #chart {
   width: 100%;
-  height: 700px;
+  height: 800px;
   margin-left: 15px;
 }
 
 .card {
-  width: 50%;
+  width: 95.5%;
   margin-left: 15px;
+  //margin-right: 15px;
   display: inline-block;
 }
 

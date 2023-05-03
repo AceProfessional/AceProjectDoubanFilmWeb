@@ -229,7 +229,7 @@ export default {
   margin: 0 15px 15px;
 }
 
-.EchartsCard {
-  display: flex;
-}
+//.EchartsCard {
+//  display: flex;
+//}
 </style>

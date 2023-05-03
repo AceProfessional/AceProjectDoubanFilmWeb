@@ -79,12 +79,16 @@ export default {
 #chartone {
   width: 100%;
   height: 700px;
-  margin-right: 15px;
+  //margin-: 15px;
+  //margin-right: 15px;
 }
 
 .box {
-  width: 50%;
+  width: 95.5%;
   display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 </style>
