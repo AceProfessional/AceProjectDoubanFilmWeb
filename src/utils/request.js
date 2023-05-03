@@ -5,7 +5,8 @@ import axios from "axios";
 // 创建axios实例
 const Service = axios.create({
     // 请求地址的公共部分
-    baseURL:'http://10.0.12.2:64202',
+    // baseURL:'http://10.0.12.2:64202',
+    baseURL:'http://mapping.fairy.host:65511',
     // 请求的超时时间
     timeout:3000
 })
