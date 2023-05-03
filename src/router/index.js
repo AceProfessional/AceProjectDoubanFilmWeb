@@ -7,6 +7,11 @@ import TimeView from "@/views/time/TimeView";
 import ScoreView from "@/views/score/ScoreView";
 import AddressView from "@/views/address/AddressView";
 import DirectorView from "@/views/director_sort/DirectorView";
+import Actors from "@/views/WordCloud/Actors/Actors.vue";
+import Directors from "@/views/WordCloud/Directors/Directors.vue";
+import Types from "@/views/WordCloud/Types/Types.vue";
+import Summary from "@/views/WordCloud/Summary/Summary.vue";
+import Movies from "@/views/WordCloud/Movies/Movies.vue";
 
 const routes = [
     {
@@ -44,7 +49,31 @@ const routes = [
                 name: 'address',
                 component: AddressView
             },
-
+            {
+                path: 'actorsWordCloud',
+                name: 'actorsWordCloud',
+                component: Actors
+            },
+            {
+                path: 'directorsWordCloud',
+                name: 'directorsWordCloud',
+                component: Directors
+            },
+            {
+                path: 'typeWordCloud',
+                name: 'typeWordCloud',
+                component: Types
+            },
+            {
+                path: 'summaryWordCloud',
+                name: 'summaryWordCloud',
+                component: Summary
+            },
+            {
+                path: 'moviesWordCloud',
+                name: 'moviesWordCloud',
+                component: Movies
+            }
         ]
     }
 ]
