@@ -8,11 +8,6 @@ import App from './App.vue'
 import axios from "axios";
 import './utils/request'
 
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
-Vue.use(Antd);
-
-
 // axios.defaults.baseURL = 'http://10.0.12.2:64202'
 // 测试
 axios.defaults.baseURL = 'https://mapping.fairy.host:1443/douban'
