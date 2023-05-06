@@ -4,5 +4,5 @@ COPY package.* ./
 RUN npm install --legacy-peer-deps
 COPY . .
 EXPOSE 8080
-CMD ["npm", "start"]
+CMD ["npm", "run", "serve"]
 
