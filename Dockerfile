@@ -1,4 +1,4 @@
-FROM node:18
+FROM nginx
 WORKDIR /douban
 COPY package.* ./
 RUN npm install --legacy-peer-deps
