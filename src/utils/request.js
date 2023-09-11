@@ -5,10 +5,10 @@ import axios from "axios";
 // 创建axios实例
 const Service = axios.create({
     // 请求地址的公共部分
-    // baseURL:'http://10.0.12.2:64202',
-    baseURL:'https://mapping.fairy.host:1443/douban',
+    baseURL: 'http://127.0.0.1:64202',
+    // baseURL:'https://mapping.fairy.host:1443/douban',
     // 请求的超时时间
-    timeout:3000
+    timeout: 3000
 })
 
 // axios拦截器
@@ -16,7 +16,7 @@ const Service = axios.create({
 Service.interceptors.request.use(config => {
     // config 请求的信息
     return config
-},error => {    // 错误信息
+}, error => {    // 错误信息
     //  抛出错误
     Promise.reject(error)
 })
@@ -24,7 +24,7 @@ Service.interceptors.request.use(config => {
 Service.interceptors.response.use(res => {
     // console.log(res)
     return Promise.resolve(res)
-},error => {
+}, error => {
     Promise.reject(error)
 })
 
