@@ -10,7 +10,10 @@ import './utils/request'
 
 // 测试
 // axios.defaults.baseURL = 'http://127.0.0.1:64202'
-axios.defaults.baseURL = 'https://mapping.fairy.host:1443/douban/api'
+// Docker 部署
+// axios.defaults.baseURL = 'https://mapping.fairy.host:1443/douban/api'
+// 原生 Nginx 部署
+axios.defaults.baseURL = 'http://127.0.0.1:64200/'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
