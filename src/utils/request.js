@@ -7,9 +7,9 @@ const Service = axios.create({
     // 请求地址的公共部分
     // baseURL: 'http://127.0.0.1:64202',
     // Docker 部署
-    // baseURL:'https://mapping.fairy.host:1443/douban/api',
+    baseURL: 'https://mapping.fairy.host:4433/douban/api',
     // 原生 Nginx 部署
-    baseURL: 'http://127.0.0.1:64200/',
+    // baseURL: 'http://127.0.0.1:64200/',
     // 请求的超时时间
     timeout: 3000
 })
